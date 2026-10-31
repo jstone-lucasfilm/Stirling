@@ -48,7 +48,7 @@
   </place2d>
   <texcoord name="mtlxtexcoord1" type="vector2" xpos="-11.8653" ypos="-4.38045" />
   <conductor_bsdf name="mtlxconductor_bsdf1" type="BSDF" xpos="-2.88403" ypos="-1.87239">
-    <input name="extinction" type="color3" value="5.206, 4.231, 3.754" />
+    <input name="extinction" type="color3" value="5.635, 4.171, 3.798" />
     <input name="ior" type="color3" value="4.369, 2.916, 1.654" />
     <input name="normal" type="vector3" nodename="mtlxbump2" />
     <input name="roughness" type="vector2" nodename="mtlxroughness_anisotropy1" />

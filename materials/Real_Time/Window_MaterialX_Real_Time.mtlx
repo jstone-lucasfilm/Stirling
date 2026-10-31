@@ -7,7 +7,7 @@
     <input name="normal" type="vector3" nodename="mtlxbump1" />
     <input name="roughness" type="vector2" value="0, 0" />
     <input name="scatter_mode" type="string" value="RT" />
-    <input name="tint" type="color3" value="0.98, 0.99, 1" />
+    <input name="tint" type="color3" value="0.9704, 0.9894, 1" />
   </dielectric_bsdf>
   <bump name="mtlxbump1" type="vector3" xpos="-8.71349" ypos="1.19527">
     <input name="height" type="float" nodename="mtlxseparate3c2" output="outr" />

@@ -6,7 +6,7 @@
   <dielectric_bsdf name="mtlxdielectric_bsdf1" type="BSDF" xpos="-2.2764" ypos="0.0774">
     <input name="normal" type="vector3" nodename="mtlxnormalmap1" />
     <input name="scatter_mode" type="string" value="RT" />
-    <input name="tint" type="color3" value="1, 0.251, 0.251" />
+    <input name="tint" type="color3" value="1, 0.1004, 0.1525" />
   </dielectric_bsdf>
   <normalmap name="mtlxnormalmap1" type="vector3" nodedef="ND_normalmap_float" xpos="-5.56346" ypos="-0.374747">
     <input name="in" type="vector3" nodename="mtlximage1" />

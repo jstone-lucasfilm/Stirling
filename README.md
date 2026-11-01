@@ -11,26 +11,19 @@ Stirling is an official Pixar asset derived from the Finn McMissile character in
 </div>
 
 <br><br>
-Stirling comes in three openUSD variants:
+Stirling comes in two openUSD variants, which share the same materials and represent the same colors:
 
 Real Time: 
 - Polys - High res mesh
 - PNG raster textures
-- sRGB color space
-- 2K max resolution
+- sRGB texture encoding, Linear Rec.709 color space
+- 2K max resolution, with 4K seats and tire inscriptions
 - Games | Web | Mobile
 
 Offline:
 - SubD - Low res mesh
-- TEX Mipmap textures
-- OCIO Aces color space
-- 4K max resolution
-- Production rendering
-
-RenderMan:
-- SubD - Low res mesh
-- TEX Mipmap textures in RenderMan format
-- OCIO Aces color space
+- TEX Mipmap textures (tiled OpenEXR)
+- Linear Rec.709 color space
 - 4K max resolution
 - Production rendering
 

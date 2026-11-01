@@ -5,7 +5,7 @@
   <texcoord name="mtlxtexcoord1" type="vector2" />
 
   <tiledimage name="mtlxtiledimage1" type="float">
-    <input name="file" type="filename" value="../../textures/aces_Mipmapped/oak_wood_planks_rough_4k.tex" />
+    <input name="file" type="filename" value="../../textures/tex/oak_wood_planks_rough_4k.tex" />
     <input name="uvtiling" type="vector2" value="4, 4" />
     <input name="texcoord" type="vector2" nodename="mtlxtexcoord1" />
   </tiledimage>
@@ -25,13 +25,13 @@
   </bump>
 
   <tiledimage name="mtlxtiledimage2" type="color3">
-    <input name="file" type="filename" value="../../textures/aces_Mipmapped/oak_wood_planks_diff_4k.tex" />
+    <input name="file" type="filename" value="../../textures/tex/oak_wood_planks_diff_4k.tex" />
     <input name="uvtiling" type="vector2" value="4, 4" />
     <input name="texcoord" type="vector2" nodename="mtlxtexcoord1" />
   </tiledimage>
 
   <tiledimage name="mtlxtiledimage3" type="float">
-    <input name="file" type="filename" value="../../textures/aces_Mipmapped/oak_wood_planks_disp_4k.tex" />
+    <input name="file" type="filename" value="../../textures/tex/oak_wood_planks_disp_4k.tex" />
     <input name="uvtiling" type="vector2" value="4, 4" />
     <input name="texcoord" type="vector2" nodename="mtlxtexcoord1" />
   </tiledimage>

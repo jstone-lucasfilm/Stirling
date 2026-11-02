@@ -4,7 +4,7 @@
     <input name="edf" type="EDF" nodename="mtlxuniform_edf1" />
   </surface>
   <uniform_edf name="mtlxuniform_edf1" type="EDF" xpos="-1.25393" ypos="-4.10155">
-    <input name="color" type="color3" value="0, 0.672, 0.1603" />
+    <input name="color" type="color3" value="0, 0.8, 0" colorspace="acescg" />
   </uniform_edf>
   <surfacematerial name="Green_Emissive_MaterialX" type="material">
     <input name="surfaceshader" type="surfaceshader" nodename="mtlxsurface1" />

@@ -7,7 +7,7 @@
     <input name="normal" type="vector3" nodename="mtlxnormalmap1" />
     <input name="roughness" type="vector2" value="0.1, 0.1" />
     <input name="scatter_mode" type="string" value="RT" />
-    <input name="tint" type="color3" value="1, 0.5561, 0" />
+    <input name="tint" type="color3" value="1, 0.68574667, 0.037999988" colorspace="acescg" />
   </dielectric_bsdf>
   <normalmap name="mtlxnormalmap1" type="vector3" nodedef="ND_normalmap_float" xpos="-5.56346" ypos="-0.374747">
     <input name="in" type="vector3" nodename="mtlximage1" />

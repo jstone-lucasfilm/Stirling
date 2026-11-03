@@ -96,8 +96,13 @@
     <input name="file" type="filename" value="../../textures/tex/Stirling_Tire_Mask.tex" />
   </image>
   <displacement name="mtlxdisplacement" type="displacementshader" nodedef="ND_displacement_float" xpos="-0.120633" ypos="4.63403">
-    <input name="displacement" type="float" nodename="mtlximage1" />
+    <input name="displacement" type="float" nodename="mtlxremap_tire_disp" />
   </displacement>
+  <remap name="mtlxremap_tire_disp" type="float" xpos="-2.36351" ypos="4.63403" doc="tire_Disp stores displacement normalised to 0..1 for 8-bit precision; this restores the original displacement range.">
+    <input name="in" type="float" nodename="mtlximage1" />
+    <input name="outlow" type="float" value="-0.007" />
+    <input name="outhigh" type="float" value="0.031" />
+  </remap>
   <image name="mtlximage1" type="float" xpos="-4.60638" ypos="4.63403">
     <input name="file" type="filename" value="../../textures/tex/tire_Disp.tex" />
   </image>

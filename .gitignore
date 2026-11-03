@@ -20,3 +20,6 @@ Desktop.ini
 # Log & Temp Files
 *.log
 *.tmp
+
+# Renderer Texture Caches
+*.rat

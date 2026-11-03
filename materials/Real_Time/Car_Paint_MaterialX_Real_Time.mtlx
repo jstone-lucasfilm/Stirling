@@ -46,7 +46,7 @@
     <input name="thinfilm_thickness" type="float" value="1" />
   </dielectric_bsdf>
   <roughness_anisotropy name="mtlxroughness_anisotropy1" type="vector2" xpos="4.11536" ypos="-0.107367">
-    <input name="anisotropy" type="float" nodename="mtlxseparate3c1" output="outg" />
+    <input name="anisotropy" type="float" nodename="mtlxseparate3c1" output="outr" />
     <input name="roughness" type="float" nodename="mtlxseparate3c1" output="outr" />
   </roughness_anisotropy>
   <separate3 name="mtlxseparate3c1" type="multioutput" nodedef="ND_separate3_color3" xpos="0.616652" ypos="-0.492504">

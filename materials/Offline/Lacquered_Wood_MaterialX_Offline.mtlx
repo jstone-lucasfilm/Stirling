@@ -20,7 +20,7 @@
     <input name="saturation" type="float" value="1.2" />
   </colorcorrect>
   <image name="mtlximage1" type="color3" xpos="-7.14371" ypos="0.0523117">
-    <input name="file" type="filename" value="../../textures/aces_Mipmapped/Wood_014_COLOR.tex" colorspace="acescg" />
+    <input name="file" type="filename" value="../../textures/tex/Wood_014_COLOR.tex" colorspace="acescg" />
   </image>
   <surfacematerial name="Lacquered_Wood_MaterialX" type="material">
     <input name="surfaceshader" type="surfaceshader" nodename="mtlxsurface1" />

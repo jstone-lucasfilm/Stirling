@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<materialx version="1.39" colorspace="lin_rec709">
+<materialx version="1.39">
   <surface name="mtlxsurface1" type="surfaceshader" xpos="23.2408" ypos="-0.232691">
     <input name="bsdf" type="BSDF" nodename="mtlxmix1" />
   </surface>
@@ -73,7 +73,7 @@
   </place2d>
   <texcoord name="mtlxtexcoord1" type="vector2" xpos="-20.4573" ypos="2.46407" />
   <oren_nayar_diffuse_bsdf name="mtlxoren_nayar_diffuse_bsdf1" type="BSDF" xpos="-1.76488" ypos="1.19731">
-    <input name="color" type="color3" value="0.02, 0.02, 0.02" />
+    <input name="color" type="color3" value="0.02, 0.02, 0.02" colorspace="lin_rec709" />
     <input name="normal" type="vector3" nodename="mtlxbump1" />
     <input name="roughness" type="float" value="0.2" />
   </oren_nayar_diffuse_bsdf>

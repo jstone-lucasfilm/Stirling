@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<materialx version="1.39" colorspace="acescg">
+<materialx version="1.39">
   <surface name="mtlxsurface1" type="surfaceshader" xpos="4.23978" ypos="0.420629">
     <input name="bsdf" type="BSDF" nodename="mtlxlayer1" />
   </surface>
@@ -31,7 +31,7 @@
     <input name="normal" type="vector3" nodename="mtlxnormalmap1" />
   </oren_nayar_diffuse_bsdf>
   <image name="mtlximage1" type="color3" xpos="-5.15553" ypos="0.27113">
-    <input name="file" type="filename" value="../../textures/tex/stirling_Seats_Color.tex" colorspace="acescg" />
+    <input name="file" type="filename" value="../../textures/tex/stirling_Seats_Color.tex" colorspace="lin_rec709" />
   </image>
   <surfacematerial name="Seats_MaterialX" type="material">
     <input name="surfaceshader" type="surfaceshader" nodename="mtlxsurface1" />

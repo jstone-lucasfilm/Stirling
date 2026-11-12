@@ -11,19 +11,19 @@ Stirling is an official Pixar asset derived from the Finn McMissile character in
 </div>
 
 <br><br>
-Stirling comes in two openUSD variants:
+Stirling comes in two openUSD variants, which share the same materials and represent the same colors:
 
 Real Time: 
 - Polys - High res mesh
 - PNG raster textures
-- sRGB color space
+- Linear Rec.709 color space, with sRGB-encoded color textures
 - 2K max resolution, with 4K seats and tire inscriptions
 - Games | Web | Mobile
 
 Offline:
 - SubD - Low res mesh
 - TEX Mipmap textures (tiled OpenEXR)
-- OCIO Aces color space
+- Linear Rec.709 color space
 - 4K max resolution
 - Production rendering
 
@@ -31,6 +31,20 @@ Offline:
 Stirling running in Houdini 22 and RenderMan 28:
 
 <img width="2555" height="1536" alt="Houdini-22-RenderMan-XPU" src="renders/RenderMan/Solaris_RenderMan_XPU.png" />
+
+## Color Management
+Stirling is authored in the Linear Rec.709 color space, and each color in its materials and light textures is tagged directly with its color space:
+
+- Color constants are tagged `lin_rec709`, apart from eight saturated colors that keep their original ACEScg values and are tagged `acescg`.
+- Color textures are tagged `lin_rec709` in the Offline variant, and `srgb_texture` in the Real Time variant.
+- Light textures are tagged `lin_rec709` in both variants.
+- Non-color data, such as normal, roughness, and displacement textures, is left untagged, apart from single-channel data read through a `color3` node, which is tagged `none` in the Offline variant and `srgb_texture` in the Real Time variant, where it is stored sRGB-encoded for 8-bit precision.
+
+The materials declare no document-level color space, and the USD layers do not apply `ColorSpaceAPI`, for the following reasons:
+
+- USD does not preserve the document-level color space of a referenced MaterialX file.
+- A color space applied through `ColorSpaceAPI` is inherited by every attribute beneath it, including those that carry non-color data.
+- Direct tags state the color space only where it applies, and survive referencing.
 
 ## Trivia
 Stirling also has some fun RenderMan historical trivia:

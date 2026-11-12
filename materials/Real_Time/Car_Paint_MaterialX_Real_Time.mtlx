@@ -46,7 +46,7 @@
     <input name="thinfilm_thickness" type="float" value="1" />
   </dielectric_bsdf>
   <roughness_anisotropy name="mtlxroughness_anisotropy1" type="vector2" xpos="4.11536" ypos="-0.107367">
-    <input name="anisotropy" type="float" nodename="mtlxseparate3c1" output="outg" />
+    <input name="anisotropy" type="float" nodename="mtlxseparate3c1" output="outr" />
     <input name="roughness" type="float" nodename="mtlxseparate3c1" output="outr" />
   </roughness_anisotropy>
   <separate3 name="mtlxseparate3c1" type="multioutput" nodedef="ND_separate3_color3" xpos="0.616652" ypos="-0.492504">
@@ -68,9 +68,12 @@
   <conductor_bsdf name="mtlxconductor_bsdf1" type="BSDF" xpos="3.08891" ypos="4.07311">
     <input name="extinction" type="color3" value="2.676, 3.569, 4.105" />
     <input name="ior" type="color3" value="1.6, 1.6, 1.6" />
-    <input name="normal" type="vector3" nodename="mtlxmix1" />
+    <input name="normal" type="vector3" nodename="mtlxnormalize2" />
     <input name="roughness" type="vector2" value="0.15, 0.15" />
   </conductor_bsdf>
+  <normalize name="mtlxnormalize2" type="vector3" xpos="1.70564" ypos="5.12311">
+    <input name="in" type="vector3" nodename="mtlxmix1" />
+  </normalize>
   <mix name="mtlxmix1" type="vector3" nodedef="ND_mix_vector3" xpos="0.322372" ypos="5.12311">
     <input name="bg" type="vector3" nodename="mtlxnormalize1" />
     <input name="fg" type="vector3" nodename="mtlxflake3d2" output="flakenormal" />

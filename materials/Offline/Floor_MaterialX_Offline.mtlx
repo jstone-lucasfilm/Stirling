@@ -10,13 +10,9 @@
     <input name="texcoord" type="vector2" nodename="mtlxtexcoord1" />
   </tiledimage>
 
-  <range name="mtlxrange1" type="float">
-    <input name="in" type="float" nodename="mtlxtiledimage1" />
-  </range>
-
   <roughness_anisotropy name="mtlxroughness_anisotropy1" type="vector2">
-    <input name="roughness" type="float" nodename="mtlxrange1" />
-    <input name="anisotropy" type="float" nodename="mtlxrange1" />
+    <input name="roughness" type="float" nodename="mtlxtiledimage1" />
+    <input name="anisotropy" type="float" nodename="mtlxtiledimage1" />
   </roughness_anisotropy>
 
   <bump name="mtlxbump1" type="vector3">
@@ -55,7 +51,7 @@
     <input name="bsdf" type="BSDF" nodename="mtlxlayer1" />
   </surface>
 
-  <displacement name="mtlxdisplacement" type="displacementshader">
+  <displacement name="mtlxdisplacement" type="displacementshader" nodedef="ND_displacement_float">
     <input name="displacement" type="float" nodename="mtlxtiledimage3" />
     <input name="scale" type="float" value="0.01" />
   </displacement>
